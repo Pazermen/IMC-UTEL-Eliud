@@ -1,0 +1,22 @@
+# Función para calcular el IMC
+def calcular_imc(peso, estatura):
+    return peso / (estatura ** 2)
+
+# Solicitar datos al usuario
+nombre = input("Ingresa tu nombre: ")
+apellido_paterno = input("Ingresa tu apellido paterno: ")
+apellido_materno = input("Ingresa tu apellido materno: ")
+edad = int(input("Ingresa tu edad: "))
+peso = float(input("Ingresa tu peso en kilogramos: "))
+estatura = float(input("Ingresa tu estatura en metros: "))
+
+# Calcular IMC
+imc = calcular_imc(peso, estatura)
+
+# Mostrar los resultados
+print("\n--- Información Personal ---")
+print(f"Nombre: {nombre} {apellido_paterno} {apellido_materno}")
+print(f"Edad: {edad} años")
+print(f"Peso: {peso} kg")
+print(f"Estatura: {estatura} m")
+print(f"Índice de Masa Corporal (IMC): {imc:.2f}")
